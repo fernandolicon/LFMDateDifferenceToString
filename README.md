@@ -20,5 +20,11 @@ Gets the difference between the date you're sending and today.
 ```swift
 LFMDateDifferenceToString.getStringOfDifferenceFromToday(yourDate)
 ```
+### Difference between two dates
+
+This method would return you the difference between two different dates. If the start date is earlier than the end date the method will return a **<1m** string. (I'll be working on a way to avoid this).
+```swift
+LFMDateDifferenceToString.getStringOfDifferenceBetweenDates(initialDate, edDate: endDate)
+```
 
 More methods being developed.

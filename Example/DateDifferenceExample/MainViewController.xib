@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainViewController" customModule="DateDifferenceExample" customModuleProvider="target">
             <connections>
+                <outlet property="betweenDatesCheckBox" destination="FES-Pw-Q4b" id="1Xz-KH-jTU"/>
                 <outlet property="endDatePicker" destination="pg8-FM-7Qq" id="CD5-dr-q5w"/>
                 <outlet property="initialDatePicker" destination="c9f-ff-HvR" id="jl2-nw-hdx"/>
                 <outlet property="resultLabel" destination="n6R-Df-gOx" id="4nC-KN-DOB"/>
@@ -80,6 +81,17 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FES-Pw-Q4b">
+                    <rect key="frame" x="188" y="253" width="104" height="25"/>
+                    <animations/>
+                    <buttonCell key="cell" type="check" title="Between dates" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="uNe-9D-cAb">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="betweenDatesChanged:" target="-2" id="JH0-ca-JQc"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="OXo-Ks-WjC" firstAttribute="top" secondItem="pg8-FM-7Qq" secondAttribute="bottom" constant="152" id="1aR-qq-Frf"/>
@@ -87,10 +99,12 @@
                 <constraint firstItem="c9f-ff-HvR" firstAttribute="top" secondItem="MDc-PE-LSU" secondAttribute="top" constant="20" id="7NK-u8-Tdt"/>
                 <constraint firstItem="OXo-Ks-WjC" firstAttribute="centerX" secondItem="MDc-PE-LSU" secondAttribute="centerX" id="8la-oU-rDC"/>
                 <constraint firstItem="pg8-FM-7Qq" firstAttribute="centerX" secondItem="MDc-PE-LSU" secondAttribute="centerX" id="ULX-ce-Uex"/>
+                <constraint firstItem="FES-Pw-Q4b" firstAttribute="centerX" secondItem="MDc-PE-LSU" secondAttribute="centerX" id="ZHL-e8-rqG"/>
                 <constraint firstAttribute="bottom" secondItem="2Id-Lp-6aM" secondAttribute="bottom" constant="20" id="eQQ-2P-Hnd"/>
                 <constraint firstItem="n6R-Df-gOx" firstAttribute="top" secondItem="OXo-Ks-WjC" secondAttribute="bottom" constant="8" id="fdg-iO-xhc"/>
                 <constraint firstItem="pg8-FM-7Qq" firstAttribute="top" secondItem="c9f-ff-HvR" secondAttribute="bottom" constant="8" id="fol-90-fB5"/>
                 <constraint firstItem="c9f-ff-HvR" firstAttribute="centerX" secondItem="MDc-PE-LSU" secondAttribute="centerX" id="hHb-jL-lBr"/>
+                <constraint firstItem="FES-Pw-Q4b" firstAttribute="top" secondItem="pg8-FM-7Qq" secondAttribute="bottom" constant="8" id="mA2-fX-SXB"/>
                 <constraint firstItem="2Id-Lp-6aM" firstAttribute="centerX" secondItem="MDc-PE-LSU" secondAttribute="centerX" id="vN9-jb-mQD"/>
             </constraints>
             <animations/>

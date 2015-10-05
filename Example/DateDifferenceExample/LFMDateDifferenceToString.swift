@@ -16,6 +16,11 @@ class LFMDateDifferenceToString: NSObject {
         return self.transformDifferenceToString(timeInterval)
     }
     
+    class func getStringOfDifferenceBetweenDates(initialDate: NSDate, endDate: NSDate) -> String{
+        let timeInterval = self.getDateDifferenceFromDates(initialDate, endDate: endDate)
+        return self.transformDifferenceToString(timeInterval)
+    }
+    
     //MARK: Own methods
     
     private class func transformDifferenceToString(var timeInterval: NSTimeInterval) -> String{
