@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainViewController" customModule="DateDifferenceExample" customModuleProvider="target">
+            <connections>
+                <outlet property="endDatePicker" destination="pg8-FM-7Qq" id="CD5-dr-q5w"/>
+                <outlet property="initialDatePicker" destination="c9f-ff-HvR" id="jl2-nw-hdx"/>
+                <outlet property="resultLabel" destination="n6R-Df-gOx" id="4nC-KN-DOB"/>
+                <outlet property="view" destination="MDc-PE-LSU" id="yKa-q1-RuW"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="MDc-PE-LSU">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c9f-ff-HvR">
+                    <rect key="frame" x="193" y="317" width="97" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="RpH-H1-BYx"/>
+                    </constraints>
+                    <animations/>
+                    <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="dyL-2t-x2u">
+                        <font key="font" metaFont="system"/>
+                        <calendarDate key="date" timeIntervalSinceReferenceDate="-595929600" calendarFormat="%Y-%m-%d %H:%M:%S %z">
+                            <!--1982-02-12 08:00:00 -0800-->
+                            <timeZone key="timeZone" name="US/Pacific"/>
+                        </calendarDate>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                    </datePickerCell>
+                </datePicker>
+                <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pg8-FM-7Qq">
+                    <rect key="frame" x="193" y="286" width="97" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="IAv-2h-5TQ"/>
+                    </constraints>
+                    <animations/>
+                    <datePickerCell key="cell" enabled="NO" borderStyle="bezel" alignment="left" id="Xau-Sg-z5s">
+                        <font key="font" metaFont="system"/>
+                        <calendarDate key="date" timeIntervalSinceReferenceDate="-595929600" calendarFormat="%Y-%m-%d %H:%M:%S %z">
+                            <!--1982-02-12 08:00:00 -0800-->
+                            <timeZone key="timeZone" name="US/Pacific"/>
+                        </calendarDate>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                    </datePickerCell>
+                </datePicker>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Id-Lp-6aM">
+                    <rect key="frame" x="192" y="13" width="97" height="32"/>
+                    <animations/>
+                    <buttonCell key="cell" type="push" title="Calculate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NxX-PY-Phe">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="calculateDifference:" target="-2" id="1zj-fi-bpS"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OXo-Ks-WjC">
+                    <rect key="frame" x="217" y="117" width="46" height="17"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Result:" id="hLS-ph-fm0">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n6R-Df-gOx">
+                    <rect key="frame" x="238" y="92" width="4" height="17"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="Nde-jr-oVP">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="OXo-Ks-WjC" firstAttribute="top" secondItem="pg8-FM-7Qq" secondAttribute="bottom" constant="152" id="1aR-qq-Frf"/>
+                <constraint firstItem="n6R-Df-gOx" firstAttribute="centerX" secondItem="MDc-PE-LSU" secondAttribute="centerX" id="1yN-ZT-jlG"/>
+                <constraint firstItem="c9f-ff-HvR" firstAttribute="top" secondItem="MDc-PE-LSU" secondAttribute="top" constant="20" id="7NK-u8-Tdt"/>
+                <constraint firstItem="OXo-Ks-WjC" firstAttribute="centerX" secondItem="MDc-PE-LSU" secondAttribute="centerX" id="8la-oU-rDC"/>
+                <constraint firstItem="pg8-FM-7Qq" firstAttribute="centerX" secondItem="MDc-PE-LSU" secondAttribute="centerX" id="ULX-ce-Uex"/>
+                <constraint firstAttribute="bottom" secondItem="2Id-Lp-6aM" secondAttribute="bottom" constant="20" id="eQQ-2P-Hnd"/>
+                <constraint firstItem="n6R-Df-gOx" firstAttribute="top" secondItem="OXo-Ks-WjC" secondAttribute="bottom" constant="8" id="fdg-iO-xhc"/>
+                <constraint firstItem="pg8-FM-7Qq" firstAttribute="top" secondItem="c9f-ff-HvR" secondAttribute="bottom" constant="8" id="fol-90-fB5"/>
+                <constraint firstItem="c9f-ff-HvR" firstAttribute="centerX" secondItem="MDc-PE-LSU" secondAttribute="centerX" id="hHb-jL-lBr"/>
+                <constraint firstItem="2Id-Lp-6aM" firstAttribute="centerX" secondItem="MDc-PE-LSU" secondAttribute="centerX" id="vN9-jb-mQD"/>
+            </constraints>
+            <animations/>
+        </view>
+    </objects>
+</document>

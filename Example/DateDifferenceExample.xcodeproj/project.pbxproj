@@ -12,6 +12,8 @@
 		A8E11B0A1BC02FC10003952C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E11B081BC02FC10003952C /* MainMenu.xib */; };
 		A8E11B151BC02FC10003952C /* DateDifferenceExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E11B141BC02FC10003952C /* DateDifferenceExampleTests.swift */; };
 		A8E11B201BC02FC10003952C /* DateDifferenceExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E11B1F1BC02FC10003952C /* DateDifferenceExampleUITests.swift */; };
+		A8E11B391BC1F2460003952C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E11B371BC1F2460003952C /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A8E11B3A1BC1F2460003952C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E11B381BC1F2460003952C /* MainViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		A8E11B1B1BC02FC10003952C /* DateDifferenceExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateDifferenceExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E11B1F1BC02FC10003952C /* DateDifferenceExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDifferenceExampleUITests.swift; sourceTree = "<group>"; };
 		A8E11B211BC02FC20003952C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E11B371BC1F2460003952C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A8E11B381BC1F2460003952C /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 		A8E11B031BC02FC10003952C /* DateDifferenceExample */ = {
 			isa = PBXGroup;
 			children = (
+				A8E11B371BC1F2460003952C /* MainViewController.swift */,
+				A8E11B381BC1F2460003952C /* MainViewController.xib */,
 				A8E11B041BC02FC10003952C /* AppDelegate.swift */,
 				A8E11B061BC02FC10003952C /* Assets.xcassets */,
 				A8E11B081BC02FC10003952C /* MainMenu.xib */,
@@ -223,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E11B071BC02FC10003952C /* Assets.xcassets in Resources */,
+				A8E11B3A1BC1F2460003952C /* MainViewController.xib in Resources */,
 				A8E11B0A1BC02FC10003952C /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E11B051BC02FC10003952C /* AppDelegate.swift in Sources */,
+				A8E11B391BC1F2460003952C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +478,7 @@
 				A8E11B261BC02FC20003952C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8E11B271BC02FC20003952C /* Build configuration list for PBXNativeTarget "DateDifferenceExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +487,7 @@
 				A8E11B291BC02FC20003952C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8E11B2A1BC02FC20003952C /* Build configuration list for PBXNativeTarget "DateDifferenceExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +496,7 @@
 				A8E11B2C1BC02FC20003952C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
