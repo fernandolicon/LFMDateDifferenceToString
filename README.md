@@ -14,4 +14,11 @@ Other examples:
 
 ## Methods
 
-Being developed.
+### Difference from today
+
+Gets the difference between the date you're sending and today.
+```Obj-C
+LFMDateDifferenceToString.getStringOfDifferenceFromToday(yourDate)
+```
+
+More methods being developed.
