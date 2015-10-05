@@ -24,7 +24,7 @@ LFMDateDifferenceToString.getStringOfDifferenceFromToday(yourDate)
 
 This method would return you the difference between two different dates. If the start date is earlier than the end date the method will return a **<1m** string. (I'll be working on a way to avoid this).
 ```swift
-LFMDateDifferenceToString.getStringOfDifferenceBetweenDates(initialDate, edDate: endDate)
+LFMDateDifferenceToString.getStringOfDifferenceBetweenDates(initialDate, endDate: endDate)
 ```
 
 More methods being developed.
