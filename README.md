@@ -17,7 +17,7 @@ Other examples:
 ### Difference from today
 
 Gets the difference between the date you're sending and today.
-```Swift
+```swift
 LFMDateDifferenceToString.getStringOfDifferenceFromToday(yourDate)
 ```
 
