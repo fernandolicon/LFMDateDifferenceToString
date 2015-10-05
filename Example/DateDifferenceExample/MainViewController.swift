@@ -16,9 +16,12 @@ class MainViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        
+        initialDatePicker.dateValue = NSDate()
+        endDatePicker.dateValue = NSDate()
     }
     
     @IBAction func calculateDifference(sender: AnyObject) {
-        print(initialDatePicker.dateValue)
+        resultLabel.stringValue = LFMDateDifferenceToString.getStringOfDifferenceFromToday(initialDatePicker.dateValue)
     }
 }
